@@ -1,0 +1,66 @@
+
+#container {
+            margin: 50px ;
+            width: 400px;
+            height: 300px;
+            border: 1px ;
+            padding: 10px;
+    		
+
+}
+.box{
+	color:white;
+	border: 1px solid black;
+	height:50px;
+	width:50px;
+	padding:10px;
+	margin:0px 50px 50px 0px;
+	font-weight:bold;
+	float:left;
+}
+img{
+	position:relative;
+	bottom:98px;
+	left:40px;
+	
+	}
+
+.red{
+	
+	background-color:red;
+	
+	
+	
+}
+.orange{
+	
+	background-color:orange;
+	
+
+
+}
+.yellow{
+	
+	background-color:yellow;
+	
+}
+
+.green{
+	
+	background-color:green;
+	
+}
+.blue{
+	background-color:blue;
+	
+}
+.pink {
+	background-color:pink;
+	
+	}
+h1{
+	text-decoration: underline;
+	color:purple;
+	margin:50px;
+
+}

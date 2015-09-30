@@ -1,0 +1,79 @@
+
+
+.fancy-header{
+
+			color: blue;
+			text-decoration: underline;
+
+
+
+}
+.classy-header{
+
+
+
+		color:pink;
+		text-decoration:bold;
+}
+h1{
+	color:darkblue;
+	text-decoration: underline;
+
+}
+h2{
+	color:lightblue;
+	text-decoration: overline;
+	text-indent:400;
+	font-size:2em;
+	background-image: url(/img/confectionary.png);
+
+}
+dl{
+	color:grey;
+	text-indent:400;
+}
+ul{
+	list-style:square;
+}
+#mainheader{
+	color:blue;
+}
+.extra-large{
+	font-size: 200px;
+}
+
+#container>h1{
+	color:BurlyWood;
+}
+h1.super{
+	font-size: 12px;
+}
+h1.worst{
+	color: red;
+}
+body{
+	background-color: purple;
+	font-family:arial;
+}
+
+#wrapper{
+	background-color: gray;
+	width:450px;
+	
+}
+main{
+	background-color:salmon
+
+}
+a:link{
+	color:green;
+}
+a:visited{
+	color:papayawhip;
+	}
+a:hover{
+	color:pink;
+}
+a:active{
+	color:blue;
+	}
