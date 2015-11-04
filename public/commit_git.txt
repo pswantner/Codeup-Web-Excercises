@@ -1,0 +1,31 @@
+git git git
+	Git
+		permanent record
+		time machine
+		parallel universes
+
+	Repositories
+		local - on your own machine
+		remote - on github.com
+
+	Starting a repo
+		craete a new remote repo at httP://github.com/new
+		create a new local repo in the local folder
+
+				- cd ~/vagrant-lamp/sites/codeup.dev
+				- git init
+				- git add filename.html css/site.css
+					-git add
+					-git add -a 	"adds all the things"
+				-git comit
+				-git status at any time
+				-fit remeote add origin <remote repo addy>
+				-git push -u origin master
+
+
+working in an exisiting repo
+	-add and modify files
+	-git status
+	-git add filename.html or git  add-A
+	-git comit // do it at a  milesstone
+	-git push origin master // whehn you finish things push twice a day(anytime you xlose your lis)

@@ -1,0 +1,86 @@
+
+<!-- circle triangle, perimter and area and then a shaded area ofa rectangle -->
+
+<<html>
+<head>
+	<title>Shape Area's</title>
+</head>
+<body>
+<script>
+function areaTriangle(base,height){
+	area1=.5*base*height;
+	return area1;
+}
+areaTriangle(9,8);
+console.log('area of triangle ' +area1);
+function areaRectangle(base,height){
+	area2=base*height;
+	return area2;
+}
+areaRectangle(15,8)
+console.log('area of rectangle ' +area2);
+
+function areaOfShaded(area1,area2)
+{
+	area3=(areaRectangle(15,8)-areaTriangle(9,8));
+	return area3;
+}
+areaOfShaded(area1,area2);
+console.log('area of shaded ' + area3);
+
+function areaCircle(radius){
+	
+	area4=Math.PI*Math.pow(radius,2);
+	
+	return area4;
+}
+
+areaCircle(4);
+console.log('area of a circle '+ area4);
+
+function perimiterCircle(radius){
+
+
+	perimiter=2*Math.PI*radius;
+	return perimiter;
+
+
+}
+perimiterCircle(4);
+console.log('perimter of a circle '+perimiter);
+
+
+function areaTrapezoid(a,b,h){
+
+	area5=h*((a+b)/2)
+	return area5;
+}
+areaTrapezoid(3,4,4);
+console.log('area of a trapezoid '+ area5);
+
+
+function areaHex(a)
+
+{
+	areaHex=((3*Math.sqrt(3))/2)*Math.pow(a,2);	
+	return areaHex;
+}
+function areaTri(a){
+	areaTri=(Math.sqrt(3)/4)*Math.pow(a,2);
+	return areaTri;
+}
+areaTri(12);
+areaHex(4);
+function areaStarDavid(areaHex,areaTri)
+{
+	areaStar=(2*areaTri)-areaHex;
+	return areaStar;
+}
+areaStarDavid(areaHex,areaTri);
+console.log('the area of star of david '+ areaStar);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>High Low Challenge</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+		
+			function randomNumber(min, max){
+	return Math.floor((Math.random()*(max-min))+min);
+
+					}
+
+		console.log(randomNumber(1,50));
+		var guess;
+		var number;		
+		var cont=10;
+		var replay
+			do{
+			number=randomNumber(1,50);
+			while(guess!==number&&cont>0){
+			 	
+		 		
+				guess = prompt('guess a number, any number?(between 1-50 to give a sporting chance)');
+				
+				
+			if (guess==number){
+				alert('you are correct');
+				break;
+
+			}
+				else if(guess>=number){
+					 alert('you are high keep guessing. you have '+cont+' many guesses left');
+					 	cont--;
+
+				}
+				else if(guess<=number){
+					alert('you are low keep guessing you have '+cont+' many guesses left');
+					cont--;
+				}
+			}
+				
+				replay = prompt('Do you want to play again?')
+				cont=10;
+				
+			}while(replay=='yes');
+
+
+			
+
+
+</script>
+</body>
+</html>

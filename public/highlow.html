@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Hi Low Functions</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	function randomNumber(min, max){
+	var rand= Math.floor((Math.random()*(max-min))+min);
+	return rand;
+	}
+
+	function playAgain(){
+		var answer= confirm('Do you want to play again');
+		return answer;
+	}
+
+	function getGuess(){
+
+		var guess= prompt('Please enter your guess between 1 and 50');
+		return guess;
+	}
+	function isValidGuess(guess)
+	{
+		var parsedGuess =	parseInt(guess);
+		if(isNaN(parsedGuess)){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+	function getValidGuess(){
+	do{
+		var guess = getGuess();
+
+
+		
+		
+	}while(isValidGuess(guess)==false);
+	return guess;
+	}
+	function playGame(){
+	var i=5;
+	var rand= randomNumber(1,50)
+	do{
+		var guess=getValidGuess();
+		if(guess==rand){
+			alert('you did it' );
+		}else if(guess>rand){
+			i=i-1;
+			alert('too high you have '+i+'  guesses left');
+		}else if(guess<rand){
+			i=i-1;
+			alert('too low you have '+i+' guesses left');
+			
+		}
+
+		
+	}while(rand!=guess&&i>0);
+
+}
+do{
+playGame();
+var replay=playAgain();
+
+}while(replay);
+
+</script>
+</body>
+</html>

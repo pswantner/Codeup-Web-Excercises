@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>National Park FAQs</title>
+<style>
+	.invisible{
+
+		display:none;
+	} 
+</style>
+</head>
+<body>
+<dl>
+	<dt> Does Texas have any national parks?</dt>
+	<dd class='answer'>Yes, Big Bend</dd>
+	<dt>What park contains the world's largest collection of geysers?</dt>
+	<dd class='answer'> Yellow Stone National Park</dd>
+	<dt>Tallest Peak in Yosemite?</dt>
+	<dd class ='answer'> Mt Dana is the tallest peak</dd>
+	<dt>Most Clibmed Peak in Yosemite</dt>
+	<dd class = 'answer'> El Capitan</dd>
+	<dt>Lamest national park?</dt>
+	<dd class ="answer"> Hampton of course</dd>
+	<dt>Most Patriotic National Park</dt>
+	<dd class = 'answer'> Mt Rushmore(dont fact check me on that one)</dd>
+	<dt> Who is the director of the NPS</dt>
+	<dd class='answer'>Jonathon B Jarvis</dd>
+	<dt>How old is the NPS?</dt>
+	<dd class ='answer'>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an Act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park</dd>
+	<dt>How many people visit the national parks?</dt>
+	<dd class='answer'> 292,800,082 in 2014</dd>
+	<dt>What role did NPS have in the deep horizon oil spill?</dt>
+	<dd class='answer'>The National Park Service was an integral part of the national federal response to the explosion of the Deepwater Horizon drilling rig which occurred in the Gulf of Mexico on April 20, 2010. </dd>
+	<a href="#" id="visible">Click to toggle the answers</a>
+</dl>
+<h3>Big Bend</h3>
+
+	<ul class='list'>
+		<li>75 species of mammals have been observed in Big Bend. High temperatures and low rainfall force many to be nocturnal. Larger mammals include whitetail and mule deer, coyotes, mountain lions, and black bears. Smaller mammals include gray foxes and javelina. 20 different species of bat are in the park, including the endangered Mexican long-nosed bat.</li>
+		<li>31 species of snakes, 22 species of lizards, and 7 species of turtles have been found in Big Bend. Snakes include red racers, bullsnakes, patchnoses, and garter snakes, both black-necked and checkered. Collared and leopard lizards are the largest of these animals, some a foot long. Turtles are found mainly along the Rio Grande, and include Big Bend sliders, spiny softshells, and the yellow mud turtles.</li>
+		<li>More than 450 species of birds have been recorded, but Big Bend is best known for the types that occur only in this part of the United States, such as the Mexican duck, the Lucifer hummingbird, the Mexican jay, and the black-capped and gray vireos.
+		</li>
+		<li>Over 1,000 species of plants are found within Big Bend. Common forms include mesquite, pinon pine, juniper, yuccas, prickly pear cactus, sotol, nine species of oak tree, and three types of agaves, including lechuguilla, which grows only in the Chihuahuan Desert.
+		</li>
+	</ul>
+<h3>Yellowstone</h3>
+
+	<ul class='list'>
+			<li>There are over 40 major waterfalls in Yellowstone</li>
+			<li>Yellowstone National Park was established on March 1, 1872, 20 years before Montana, Idaho and Wyoming were granted statehood</li>
+			<li>Yellowstone has about 300 active geysers and about 10,000 thermal features</li>
+			<li>Yellowstone produces 3.3 million acre-feet of water every year making it one of the riches sources for water in the western United States</li>
+	</ul>
+<h3>Yosemite</h3>
+	<ul class="list">
+		<li>El capitan is the largest granite block in the world</li>
+		<li>840 miles of trails</li>
+		<li>park located in sierra nevada mountains</li>
+		<li>In 1906 President Roosevelt took Yosemite away from California's control and put it in the control of the federal government</li>
+	</ul>
+
+
+
+
+<script src="/js/jquery-2.1.4.js"></script>
+<script>
+
+ "use strict";
+
+        $(document).ready(function() {
+            $('dt').click(function(event) {
+                event.preventDefault();
+                $('.answer').slideToggle();
+
+            });
+            $('ul').each(function(index){$(this).children().first().css('font-weight', 'bold');
+            });
+            $('li').click(function(event) {
+                $('li').each(function(index){$(this).parent().slideUp();
+             });
+            });
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+<input type="number" id="leftOperand"> 
+
+<input id='midOperand' type='text'>
+<input id='rightOperand' type ='number'>
+
+<button id="btn9" class='number' >9</button>
+<button id="btn8"  class='number' >8</button>
+<button id="btn7" class='number'>7</button>
+<button id='btn6' class='number'>6</button>
+<button id='btn5' class='number'>5</button>
+<button id='btn4' class='number'>4</button>
+<button id='btn3' class='number'>3</button>
+<button id='btn2' class='number'>2</button>
+<button id='btn1' class='number'>1</button>
+<button id='btn+' class='operator'>+</button>
+<button id='btn-' class='operator'>-</button>
+<button id='btn*' class='operator'>*</button>
+<button id='btn/' class='operator'>/</button>
+<button id='equals'>=</button>
+<button id='clear'>C</button>
+<button id='0' class='number'>0</button>
+<button id='btn.' class='number'>.</buton>
+<script >
+"use strict";
+(function(){
+	var leftOperand = document.getElementById('leftOperand');
+	var midOperand = document.getElementById('midOperand');
+	var rightOperand = document.getElementById('rightOperand');
+	var total = '';
+   	var numbers = document.getElementsByClassName('number');
+  	var operators = document.getElementsByClassName('operator');
+  	for(var i = 0; i < numbers.length; i += 1) {
+  		numbers[i].addEventListener('click', numCap, false)
+  	}
+  	
+  	function numCap(event){
+  		if(midOperand.value == ''){
+  			leftOperand.value += this.innerHTML;
+  		} else {
+  			rightOperand.value += this.innerHTML;
+  		}
+  	}
+    
+  	for(var inter =0; inter<operators.length; inter+=1){
+  		operators[inter].addEventListener('click', OpCap, false)
+  		console.log(operators[inter]);
+  	
+  	}
+    function OpCap(event){
+    	if(midOperand.value==''){
+    	midOperand.value=this.innerHTML;
+    	console.log(this)
+    	}else{
+    		return midOperand.value;
+
+    	}
+    }
+     
+    document.getElementById('equals').addEventListener('click',calculate, false);
+     function calculate(event){
+     	switch(midOperand.value){
+     		case '+':
+     		total = (parseInt(leftOperand.value) + parseInt(rightOperand.value));
+     		console.log(total);
+     		break;
+     		case '-':
+     		total = (parseInt(leftOperand.value) - parseInt(rightOperand.value));
+     		console.log(total);
+     		break;
+     		case '*':
+     		total = (parseInt(leftOperand.value) * parseInt(rightOperand.value));
+     		console.log(total);
+     		break;
+     		case '/':
+     		total = (parseInt(leftOperand.value) / parseInt(rightOperand.value));
+     		console.log(total);
+     		break;
+     	}
+
+     	}
+
+     
+
+
+    function clear(){
+    	leftOperand.value = '';
+    	midOperand.value = '';
+    	rightOperand.value = '';
+    	total = '';
+    } 
+
+
+ //    function isNumberKey(evt){
+	// 	var charCode = (evt.which) ? evt.which : event.keyCode
+	// 	if (charCode > 31 && (charCode != 46 &&(charCode < 48 || charCode > 57)))
+	// 	    return false;
+	// 	return true;
+	// }
+
+})();
+</script>
+</body>
+</html> 

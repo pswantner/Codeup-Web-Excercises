@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>split join</title>
+</head>
+<body>
+<script >
+var planets = ['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune'];
+var planetsAsString = planets.join('|');
+console.log(planetsAsString);
+var splitPlanets = planetsAsString.split('|');
+console.log(splitPlanets);
+
+
+var student={};
+student.firstName = "Will";
+student.lastName ="Swantner";
+
+student.sayHello = function(){
+	this.msg=" hey there this is william"
+
+	console.log(this.firstName+this.lastName+this.msg);
+
+	console.log(this)
+};
+
+
+student.sayHello();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var names = ['william','patterson','Swantner','Jr'];
+var greetings = [];
+console.log(names.length);
+for(var i=0; i<names.length;i+=1){
+
+
+console.log(names[i]);
+}
+
+names.forEach(function(element, index, array){
+
+	console.log('The name at index '+index+ ' is ' + element );
+});
+function iterateNames(element, index, array){
+	console.log('the name at '+index+ ' is '+element);
+}
+names.forEach(iterateNames);
+
+
+
+names.forEach(function(element, index, array){
+	greetings[index] = 'Hi there, '+ element;
+	console.log(greetings)
+});
+
+greetings.forEach(function(greetings, index, array){
+if(index>0){
+	console.log('the last greeting was for ' + greetings);
+}
+
+
+if(index<array.length-1){
+	console.log(array[index+1]);
+
+}
+});
+
+
+names[4]='Swaterson'
+names.push('Swat')//. notation followed by function is called a method that is run on an object, push adds to the end of an array
+var userInput= prompt("What nicknames do you have for me");
+names.push(userInput);
+names.pop();// only removes the last element
+names.shift(); //removes first indexed element and moves all stuff over, to undo it .unshift
+names.unshift('william');
+names.indexOf('william');
+names.lastIndexOf('william');// in case there are multiple indedices of an element
+
+names.splice(3,1);
+
+
+
+</script>
+</body>
+</html>
