@@ -1,13 +1,15 @@
 <?php
 
 
-$c = 0;
+$c = 100;
 do{
 	
 	echo "\$c is equal to {$c}" . PHP_EOL;
-	$c+=2;
+	$c-=5;
 	
-}while($c <=100);
+}while($c >= -10);
+
+
 
 
 
