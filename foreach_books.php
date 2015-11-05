@@ -22,10 +22,14 @@ $books = array(
     )
 );
 foreach($books as $title=> $book){
-echo "Title : $title\n";	
-foreach($book as $key =>$value){
-	 echo "$key : $value\n";
-			
-	
+	if($book['published']>1950){
+		echo "$title\n";
+		echo "<><><><><><><><><>\n";	
+		foreach($book as $key =>$value){
+			echo "$key : $value\n";
 
-}}
+		}
+		echo PHP_EOL;
+	}
+}
+
