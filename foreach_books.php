@@ -1,4 +1,4 @@
-<$php
+<?php
 $books = array(
     'The Hobbit' => array(
         'published' => 1937,
@@ -21,4 +21,11 @@ $books = array(
         'pages' => 544
     )
 );
-for
+foreach($books as $title=> $book){
+echo "Title : $title\n";	
+foreach($book as $key =>$value){
+	 echo "$key : $value\n";
+			
+	
+
+}}
