@@ -10,16 +10,18 @@
 <h3></h3>
 
 <body>
-	<div  id="container-fluid">
+	<div  id="container">
+		<div class='row'>
 	<div class='col-sml-4' id="dayFocast"></div>
 	<div class='col-sml-4'></div>
 	<div class='col-sml-4'></div>
-
+		</dib
 	</div>
 <script> 
 (function() {
         "use strict";
         var tblRows;
+        var theDate =
          $.get("http://api.openweathermap.org/data/2.5/forecast/daily",{
         		APPID:"f965f66f763e33765d92074613fd5cb1",
         		lat:    29.423017,
