@@ -1,19 +1,19 @@
 <?php
 
-$haystack = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
+$haystacks = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
 $needle='Bob';
 
-$result=valueAnArray($needle,$haystack);
+$result=valueAnArray($needle,$haystacks);
 
-var_dump($result);
+// compareAnArray($haystack,$compare);
 
 
 // var_dump($result);
-function valueAnArray($needle,$haystack){
-	$result= array_search($needle, $haystack);
+function valueAnArray($needle,$haystacks){
+	$result= array_search($needle, $haystacks);
 	
 
 	if($result===false){
@@ -26,3 +26,23 @@ function valueAnArray($needle,$haystack){
 	
 
 }
+
+
+
+function compareAnArray($array1,$array2){
+	$matches=0;
+	foreach ($array1 as $value) {
+		$results=array_search($value, $array2);
+		if(is_numeric($results))
+		{
+			$matches++;
+			echo $value." ";
+		}
+		
+	}
+
+	echo "  there are ".$matches;
+}
+
+
+echo compareAnArray($haystacks,$compare);
