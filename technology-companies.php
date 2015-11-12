@@ -45,4 +45,11 @@ $companies = [
     ]
 ];
 ksort($companies);
+
+foreach($companies as $company=>$employees){
+   sort($employees);
+   $companies[$company]=$employees;
+   }
+//for_each($companies as $company=>)
+//$keys('Acorn Computers','Be Inc','Commodore','Cray','MIPS Technologies','NeXT','Silicon Graphic
 print_r($companies);
