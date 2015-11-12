@@ -44,7 +44,7 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
-ksort($companies);
+arsort($companies);
 
 foreach($companies as $company=>$employees){
    sort($employees);
